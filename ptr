@@ -1,0 +1,206 @@
+-- Rayfield loader
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "✨ Callums Scriptie Hub ✨",
+    Icon = 0,
+    LoadingTitle = "Loading UI...",
+    LoadingSubtitle = "by Callum 🧁",
+    ShowText = "📱 Callum",
+    Theme = "Bloom",
+    ToggleUIKeybind = "K",
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false,
+
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil,
+        FileName = "Big Hub"
+    },
+
+    Discord = {
+        Enabled = false,
+        Invite = "noinvitelink",
+        RememberJoins = true
+    },
+
+    KeySystem = true,
+    KeySettings = {
+        Title = "🔑 Callum Lost His Key",
+        Subtitle = "Keysystem",
+        Note = "💸 Pay me 20 bucks (25 for auto updater)",
+        FileName = "Key",
+        SaveKey = false,
+        GrabKeyFromSite = false,
+        Key = {"Hello"}
+    }
+})
+
+-- Notification
+Rayfield:Notify({
+    Title = "🎉 Thanks for using My ScriptHub",
+    Content = "Shout out to callum duffin/muffin 🧁",
+    Duration = 6.5,
+    Image = 4483362458,
+})
+
+-- Tabs (excluding themes)
+local Tab1 = Window:CreateTab("📜 Normal Scripts")
+local Tab2 = Window:CreateTab("🌙 99 Nights in a Forest")
+local Tab3 = Window:CreateTab("🧠 Steal a Brain Rot")
+local Tab4 = Window:CreateTab("⚔️ Blox Fruits")
+local Tab5 = Window:CreateTab("🐝 Bee Swarm Simulator")
+local Tab6 = Window:CreateTab("🌀 Anime Adventures")
+local Tab7 = Window:CreateTab("🐾 Pet Simulator X")
+local Tab8 = Window:CreateTab("🔫 Arsenal")
+local Tab9 = Window:CreateTab("🚪doors")
+
+Tab2:CreateButton({
+   Name = "Script VerifiedBest ESP Predictor Autobuild 99",
+   Callback = function()
+       -- load and run remote script when button clicked
+       local ok, err = pcall(function()
+           loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7d8a2a1a9a562a403b52532e58a14065.lua"))()
+       end)
+       if not ok then
+           Rayfield:Notify({
+               Title = "Script Error",
+               Content = "Failed to load script 1: "..tostring(err),
+               Duration = 5
+           })
+       end
+   end,
+})
+
+
+Tab2:CreateButton({
+   Name = "FREE OP SCRIPT | INSTANT BRING ITEMS | KILL AURA + MORE [Keysystem]",
+   Callback = function()
+       -- load and run remote script when button clicked
+       local ok, err = pcall(function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt"))()  
+       end)
+       if not ok then
+           Rayfield:Notify({
+               Title = "Script Error",
+               Content = "Failed to load script 1: "..tostring(err),
+               Duration = 5
+           })
+       end
+   end,
+})
+
+Tab2:CreateButton({
+   Name = "normal 99",
+   Callback = function()
+       -- load and run remote script when button clicked
+       local ok, err = pcall(function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/adibhub1/99-nighit-in-forest/refs/heads/main/99%20night%20in%20forest"))()
+
+       end)
+       if not ok then
+           Rayfield:Notify({
+               Title = "Script Error",
+               Content = "Failed to load script 1: "..tostring(err),
+               Duration = 5
+           })
+       end
+   end,
+})
+
+Tab2:CreateButton({
+   Name = "Made BY CALLUM [BEST SCRIPT]",
+   Callback = function()
+       -- load and run remote script when button clicked
+       local ok, err = pcall(function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/CatilusXD/rhhrrhhr9999999/refs/heads/main/jtyrtrhtthr",true))()
+       end)
+       if not ok then
+           Rayfield:Notify({
+               Title = "Script Error",
+               Content = "Failed to load script 1: "..tostring(err),
+               Duration = 5
+           })
+       end
+   end,
+})
+
+local Slider = Tab1:CreateSlider({
+   Name = "Player Speed",
+   Range = {16, 100}, -- Default Roblox WalkSpeed is 16
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "PlayerSpeedSlider",
+   Callback = function(Value)
+      -- Set the local player's WalkSpeed
+      local player = game.Players.LocalPlayer
+      if player and player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+         player.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = Value
+      end
+   end,
+})
+
+local Slider = Tab1:CreateSlider({
+   Name = "Jump Power",
+   Range = {50, 300}, -- Default Roblox JumpPower is 50
+   Increment = 5,
+   Suffix = "JumpPower",
+   CurrentValue = 50,
+   Flag = "JumpPowerSlider",
+   Callback = function(Value)
+      local player = game.Players.LocalPlayer
+      if player and player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+         player.Character:FindFirstChildOfClass("Humanoid").JumpPower = Value
+      end
+   end,
+})
+
+Tab1:CreateLabel("More scripts coming soon")
+
+Tab2:CreateLabel("coming in 1 day")
+
+Tab3:CreateLabel("coming in 1 day")
+
+Tab4:CreateLabel("coming in 1 day")
+
+Tab5:CreateLabel("coming in 1 day")
+
+Tab6:CreateLabel("coming in 1 day")
+
+Tab2:CreateButton({
+   Name = "simple script[kinda shit]",
+   Callback = function()
+       -- load and run remote script when button clicked
+       local ok, err = pcall(function()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/refs/heads/main/99%20Days%20Scirpt%20By%20Raygull.lua"))()
+       end)
+       if not ok then
+           Rayfield:Notify({
+               Title = "Script Error",
+               Content = "Failed to load script 1: "..tostring(err),
+               Duration = 5
+           })
+       end
+   end,
+})
+
+Tab2:CreateButton({
+   Name = "simple script[kinda shit]",
+   Callback = function()
+       -- load and run remote script when button clicked
+       local ok, err = pcall(function()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/refs/heads/main/99%20Days%20Scirpt%20By%20Raygull.lua"))()
+       end)
+       if not ok then
+           Rayfield:Notify({
+               Title = "Script Error",
+               Content = "Failed to load script 1: "..tostring(err),
+               Duration = 5
+           })
+       end
+   end,
+})
+
+
+
