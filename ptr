@@ -32,7 +32,7 @@ local Window = Rayfield:CreateWindow({
         FileName = "Key",
         SaveKey = false,
         GrabKeyFromSite = false,
-        Key = {"Hello"}
+        Key = {"Bigkey25"}
     }
 })
 
