@@ -1,12 +1,40 @@
+--Hand up skidder got ur ip
+--got ur webcam
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠿⠿⠿⠿⠿⠿⠿⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣤⣄⡀⠀⠰⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⡖⠀⢀⣠⣤⣄⠀⠀⠀⠀
+⠀⠀⠀⠀⠙⣿⣿⡟⢀⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⡀⢻⣿⣿⠋⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣿⠏⢠⣾⣿⡟⠙⣿⣿⣿⣿⣿⣿⠋⢻⣿⣷⡄⠹⣿⣄⠀⠀⠀⠀
+⠀⢰⣾⣿⣿⡏⢠⣿⣿⠏⢠⣦⠈⢿⣿⣿⡿⠁⣴⡄⠹⣿⣿⡄⢹⣿⣿⣷⡆⠀
+⠀⠀⠙⢿⣿⠁⣼⣿⡟⢀⣿⣿⣇⠘⣿⣿⠃⣸⣿⣿⡀⢻⣿⣧⠈⣿⡿⠋⠀⠀
+⠀⠀⠀⠸⠿⠀⣿⣿⠁⣸⡇⠀⣿⡀⢹⡏⢀⣿⠀⢸⣇⠈⣿⣿⠀⠿⠇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢿⣿⣤⡤⣤⣤⡄⢀⡤⠀⠀⢠⣤⣤⢤⣤⣿⡿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⢁⣤⣤⣤⣄⡀⠏⠀⠀⠀⢀⣠⣤⣤⣤⡈⠃⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢻⣿⡍⠹⣿⣷⣤⣀⣀⣤⣾⣿⠏⢩⣿⡟⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣦⣈⠙⠿⠿⠿⠿⠋⣁⣴⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣶⣶⣶⣶⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+
+
+
+
+
+
+
+
+
+
 -- Rayfield loader
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
     Name = "✨ Callums Scriptie Hub ✨",
-    Icon = 0,
+    Icon = "rbxassetid://4483362458",
     LoadingTitle = "Loading UI...",
     LoadingSubtitle = "by Callum 🧁",
-    ShowText = "📱 Callum",
     Theme = "Bloom",
     ToggleUIKeybind = "K",
     DisableRayfieldPrompts = false,
@@ -24,19 +52,20 @@ local Window = Rayfield:CreateWindow({
         RememberJoins = true
     },
 
+    -- Key system: does NOT remember the key
     KeySystem = true,
     KeySettings = {
-        Title = "🔑 Callum Lost His Key",
-        Subtitle = "Keysystem",
-        Note = "💸 Pay me 20 bucks (25 for auto updater)",
-        FileName = "Key",
-        SaveKey = false,
+        Title = "🔑 Callums Hub Key System",
+        Subtitle = "Enter your key below to unlock",
+        Note = "👉 Get your key from Callum",
+        FileName = "CallumsHubKey",
+        SaveKey = false,              -- do not save the key
         GrabKeyFromSite = false,
-        Key = {"Bigkey25"}
+        Key = {"Bigkey25"}            -- valid key(s)
     }
 })
 
--- Notification
+-- Welcome notification
 Rayfield:Notify({
     Title = "🎉 Thanks for using My ScriptHub",
     Content = "Shout out to callum duffin/muffin 🧁",
@@ -44,7 +73,7 @@ Rayfield:Notify({
     Image = 4483362458,
 })
 
--- Tabs (excluding themes)
+-- Tabs
 local Tab1 = Window:CreateTab("📜 Normal Scripts")
 local Tab2 = Window:CreateTab("🌙 99 Nights in a Forest")
 local Tab3 = Window:CreateTab("🧠 Steal a Brain Rot")
@@ -53,151 +82,86 @@ local Tab5 = Window:CreateTab("🐝 Bee Swarm Simulator")
 local Tab6 = Window:CreateTab("🌀 Anime Adventures")
 local Tab7 = Window:CreateTab("🐾 Pet Simulator X")
 local Tab8 = Window:CreateTab("🔫 Arsenal")
-local Tab9 = Window:CreateTab("🚪doors")
+local Tab9 = Window:CreateTab("🚪 Doors")
+local Tab10 = Window:CreateTab("🧑‍🌾 Grow a Garden")
 
-Tab2:CreateButton({
-   Name = "Script VerifiedBest ESP Predictor Autobuild 99",
-   Callback = function()
-       -- load and run remote script when button clicked
-       local ok, err = pcall(function()
-           loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7d8a2a1a9a562a403b52532e58a14065.lua"))()
-       end)
-       if not ok then
-           Rayfield:Notify({
-               Title = "Script Error",
-               Content = "Failed to load script 1: "..tostring(err),
-               Duration = 5
-           })
-       end
-   end,
-})
+-- Silent Loader
+local function SafeLoad(url)
+    pcall(function()
+        local source = game:HttpGet(url, true)
+        local func = loadstring(source)
+        if func then func() end
+    end)
+end
 
+-- -----------------------------------------
+-- 99 Nights in a Forest
+-- -----------------------------------------
+Tab2:CreateButton({ Name = "🔮 ESP Predictor Autobuild", Callback = function() SafeLoad("https://api.luarmor.net/files/v3/loaders/7d8a2a1a9a562a403b52532e58a14065.lua") end })
+Tab2:CreateButton({ Name = "⚔️ FREE OP Script (Kill Aura, Items)", Callback = function() SafeLoad("https://raw.githubusercontent.com/OverflowBGSI/Overflow/main/loader.txt") end })
+Tab2:CreateButton({ Name = "🌲 Normal Nights Script", Callback = function() SafeLoad("https://raw.githubusercontent.com/adibhub1/99-nighit-in-forest/main/99%20night%20in%20forest.lua") end })
+Tab2:CreateButton({ Name = "🌀 Unnamed Nights Script", Callback = function() SafeLoad("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua") end })
+Tab2:CreateButton({ Name = "👑 Made by Callum [BEST]", Callback = function() SafeLoad("https://raw.githubusercontent.com/CatilusXD/rhhrrhhr9999999/main/jtyrtrhtthr.lua") end })
+Tab2:CreateButton({ Name = "📜 Simple Script (Raygull)", Callback = function() SafeLoad("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/main/99%20Days%20Scirpt%20By%20Raygull.lua") end })
+Tab2:CreateButton({ Name = "🪓 Normal Script (Alt)", Callback = function() SafeLoad("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/main/99%20Days%20Scirpt%20By%20Raygull.lua") end })
 
-Tab2:CreateButton({
-   Name = "FREE OP SCRIPT | INSTANT BRING ITEMS | KILL AURA + MORE [Keysystem]",
-   Callback = function()
-       -- load and run remote script when button clicked
-       local ok, err = pcall(function()
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt"))()  
-       end)
-       if not ok then
-           Rayfield:Notify({
-               Title = "Script Error",
-               Content = "Failed to load script 1: "..tostring(err),
-               Duration = 5
-           })
-       end
-   end,
-})
+-- Normal Scripts
+Tab1:CreateButton({ Name = "⚡ Infinite Yield (Starter Script)", Callback = function() SafeLoad("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source") end })
 
-Tab2:CreateButton({
-   Name = "normal 99",
-   Callback = function()
-       -- load and run remote script when button clicked
-       local ok, err = pcall(function()
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/adibhub1/99-nighit-in-forest/refs/heads/main/99%20night%20in%20forest"))()
+-- Bee Swarm Simulator
+Tab5:CreateButton({ Name = "🌟 Kstar Script", Callback = function() SafeLoad("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/main/99%20Days%20Scirpt%20By%20Raygull.lua") end })
+Tab5:CreateButton({ Name = "📱 Old Mobile Script", Callback = function() SafeLoad("https://raw.githubusercontent.com/rbIxscriptsnet/unfair/main/rblxhub.lua") end })
 
-       end)
-       if not ok then
-           Rayfield:Notify({
-               Title = "Script Error",
-               Content = "Failed to load script 1: "..tostring(err),
-               Duration = 5
-           })
-       end
-   end,
-})
+-- Grow a Garden
+Tab10:CreateButton({ Name = "🌱 Koronis Hub (Prediction, Snipers)", Callback = function() SafeLoad("https://koronis.xyz/hub.lua") end })
+Tab10:CreateButton({ Name = "📲 Autofarm No Key (Sep 2025)", Callback = function() SafeLoad("https://raw.githubusercontent.com/Skibidiking123/Fisch1/main/FischMain.lua") end })
+Tab10:CreateButton({ Name = "🌿 Nat Hub", Callback = function() SafeLoad("https://raw.githubusercontent.com/gumanba/Scripts/main/GrowaGarden.lua") end })
+Tab10:CreateButton({ Name = "🐰 Mimi Hub (Keyless)", Callback = function() SafeLoad("https://raw.githubusercontent.com/Jstarzz/Grow-A-Garden/main/source/MimiHub.lua") end })
+Tab10:CreateButton({ Name = "💧 Wet Hub", Callback = function() SafeLoad("https://raw.githubusercontent.com/Night-Hub/WetHubReformed/main/Loadstring.lua") end })
+Tab10:CreateButton({ Name = "🌌 Rift Hub (Keyless)", Callback = function() SafeLoad("https://github.com/alyssagithub/Scripts/raw/main/FrostByte/Initiate.lua") end })
 
-Tab2:CreateButton({
-   Name = "Made BY CALLUM [BEST SCRIPT]",
-   Callback = function()
-       -- load and run remote script when button clicked
-       local ok, err = pcall(function()
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/CatilusXD/rhhrrhhr9999999/refs/heads/main/jtyrtrhtthr",true))()
-       end)
-       if not ok then
-           Rayfield:Notify({
-               Title = "Script Error",
-               Content = "Failed to load script 1: "..tostring(err),
-               Duration = 5
-           })
-       end
-   end,
-})
+-- Doors
+Tab9:CreateButton({ Name = "🔑 Roblox DOORS Script – Auto Win, ESP, No Jumpscare & God Mode (2025)", Callback = function() SafeLoad("https://raw.githubusercontent.com/TheHunterSolo1/Scripts/refs/heads/main/Protected_2809220311826785.lua.txt") end })
 
-local Slider = Tab1:CreateSlider({
-   Name = "Player Speed",
-   Range = {16, 100}, -- Default Roblox WalkSpeed is 16
-   Increment = 1,
-   Suffix = "Speed",
-   CurrentValue = 16,
-   Flag = "PlayerSpeedSlider",
-   Callback = function(Value)
-      -- Set the local player's WalkSpeed
-      local player = game.Players.LocalPlayer
-      if player and player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
-         player.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = Value
-      end
-   end,
-})
+-- Steal a Brainrot
+Tab3:CreateButton({ Name = "Steal a Brainrot Script – Instant Steal GUI (Roblox, Keyless)", Callback = function() SafeLoad("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua") end })
 
-local Slider = Tab1:CreateSlider({
-   Name = "Jump Power",
-   Range = {50, 300}, -- Default Roblox JumpPower is 50
-   Increment = 5,
-   Suffix = "JumpPower",
-   CurrentValue = 50,
-   Flag = "JumpPowerSlider",
-   Callback = function(Value)
-      local player = game.Players.LocalPlayer
-      if player and player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
-         player.Character:FindFirstChildOfClass("Humanoid").JumpPower = Value
-      end
-   end,
-})
+-- Blox Fruits
+Tab4:CreateButton({ Name = "🔥 [NEW] Keyless Blox Fruits Script 🍏 Auto Farm, Auto Raid & Infinite Money! (2025)", Callback = function() SafeLoad("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html") end })
+Tab4:CreateButton({ Name = "[YETI] Blox Fruits Script MUKURO Hub No Key System, Auto Farm & Max Level Features", Callback = function() SafeLoad("https://auth.quartyz.com/scripts/Loader.lua") end })
 
-Tab1:CreateLabel("More scripts coming soon")
+-- Arsenal
+Tab8:CreateButton({ Name = "⚡ Thunder Client V2", Callback = function() SafeLoad("https://raw.githubusercontent.com/andrewdarkyyofficial/thunderclient/main/main.lua") end })
+Tab8:CreateButton({ Name = "🔒 UNDETECTED PULSE HUB ARSENAL UPDATED", Callback = function() SafeLoad("https://raw.githubusercontent.com/fonctiono/expoits/refs/heads/main/IAMARSENAL.lua") end })
 
-Tab2:CreateLabel("coming in 1 day")
+-- Utility: Copy Key
+Tab1:CreateButton({ Name = "🔑 Copy Key", Callback = function()
+    pcall(function()
+        if setclipboard then setclipboard("Bigkey25") elseif toclipboard then toclipboard("Bigkey25") end
+    end)
+end })
 
-Tab3:CreateLabel("coming in 1 day")
+-- Sliders
+Tab1:CreateSlider({ Name = "🏃 Player Speed", Range = {16, 100}, Increment = 1, Suffix = "Speed", CurrentValue = 16, Flag = "PlayerSpeedSlider", Callback = function(Value)
+    local player = game.Players.LocalPlayer
+    if player and player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+        player.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = Value
+    end
+end })
 
-Tab4:CreateLabel("coming in 1 day")
+Tab1:CreateSlider({ Name = "🦘 Jump Power", Range = {50, 300}, Increment = 5, Suffix = "JumpPower", CurrentValue = 50, Flag = "JumpPowerSlider", Callback = function(Value)
+    local player = game.Players.LocalPlayer
+    if player and player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+        player.Character:FindFirstChildOfClass("Humanoid").JumpPower = Value
+    end
+end })
 
-Tab5:CreateLabel("coming in 1 day")
-
-Tab6:CreateLabel("coming in 1 day")
-
-Tab2:CreateButton({
-   Name = "simple script[kinda shit]",
-   Callback = function()
-       -- load and run remote script when button clicked
-       local ok, err = pcall(function()
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/refs/heads/main/99%20Days%20Scirpt%20By%20Raygull.lua"))()
-       end)
-       if not ok then
-           Rayfield:Notify({
-               Title = "Script Error",
-               Content = "Failed to load script 1: "..tostring(err),
-               Duration = 5
-           })
-       end
-   end,
-})
-
-Tab2:CreateButton({
-   Name = "simple script[kinda shit]",
-   Callback = function()
-       -- load and run remote script when button clicked
-       local ok, err = pcall(function()
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/refs/heads/main/99%20Days%20Scirpt%20By%20Raygull.lua"))()
-       end)
-       if not ok then
-           Rayfield:Notify({
-               Title = "Script Error",
-               Content = "Failed to load script 1: "..tostring(err),
-               Duration = 5
-           })
-       end
-   end,
-})
+-- Labels
+Tab1:CreateLabel("✨ More scripts coming soon")
+Tab3:CreateLabel("⌛ Coming in 1 day")
+Tab4:CreateLabel("⌛ Coming in 1 day")
+Tab5:CreateLabel("⌛ Coming in 1 day")
+Tab6:CreateLabel("⌛ Coming in 1 day")
+Tab7:CreateLabel("⌛ Coming in 1 day")
+Tab8:CreateLabel("⌛ Coming in 1 day")
+Tab9:CreateLabel("⌛ Coming in 1 day")
