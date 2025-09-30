@@ -58,6 +58,7 @@ local Tab7 = Window:CreateTab("🐾 Pet Simulator X")
 local Tab8 = Window:CreateTab("🔫 Arsenal")
 local Tab9 = Window:CreateTab("🚪 Doors")
 local Tab10 = Window:CreateTab("🧑‍🌾 Grow a Garden")
+local Tab11 = Window:CreateTab("🚨JailBreak")
 
 -- Silent Loader
 local function SafeLoad(url)
@@ -80,13 +81,19 @@ Tab2:CreateButton({ Name = "📜 Simple Script (Raygull)", Callback = function()
 Tab2:CreateButton({ Name = "🪓 Normal Script (Alt)", Callback = function() SafeLoad("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/main/99%20Days%20Scirpt%20By%20Raygull.lua") end })
 
 -- Normal Scripts
+
 Tab1:CreateButton({ Name = "⚡ Infinite Yield (Starter Script)", Callback = function() SafeLoad("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source") end })
 
 -- Bee Swarm Simulator
+
 Tab5:CreateButton({ Name = "🌟 Kstar Script", Callback = function() SafeLoad("https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/main/99%20Days%20Scirpt%20By%20Raygull.lua") end })
 Tab5:CreateButton({ Name = "📱 Old Mobile Script", Callback = function() SafeLoad("https://raw.githubusercontent.com/rbIxscriptsnet/unfair/main/rblxhub.lua") end })
+Tab5:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab5:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab5:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
 
 -- Grow a Garden
+
 Tab10:CreateButton({ Name = "🌱 Koronis Hub (Prediction, Snipers)", Callback = function() SafeLoad("https://koronis.xyz/hub.lua") end })
 Tab10:CreateButton({ Name = "📲 Autofarm No Key (Sep 2025)", Callback = function() SafeLoad("https://raw.githubusercontent.com/Skibidiking123/Fisch1/main/FischMain.lua") end })
 Tab10:CreateButton({ Name = "🌿 Nat Hub", Callback = function() SafeLoad("https://raw.githubusercontent.com/gumanba/Scripts/main/GrowaGarden.lua") end })
@@ -95,20 +102,41 @@ Tab10:CreateButton({ Name = "💧 Wet Hub", Callback = function() SafeLoad("http
 Tab10:CreateButton({ Name = "🌌 Rift Hub (Keyless)", Callback = function() SafeLoad("https://github.com/alyssagithub/Scripts/raw/main/FrostByte/Initiate.lua") end })
 
 -- Doors
+
 Tab9:CreateButton({ Name = "🔑 Roblox DOORS Script – Auto Win, ESP, No Jumpscare & God Mode (2025)", Callback = function() SafeLoad("https://raw.githubusercontent.com/TheHunterSolo1/Scripts/refs/heads/main/Protected_2809220311826785.lua.txt") end })
 
+-- jail break
+
+
+
+
 -- Steal a Brainrot
+
 Tab3:CreateButton({ Name = "Steal a Brainrot Script – Instant Steal GUI (Roblox, Keyless)", Callback = function() SafeLoad("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua") end })
+Tab3:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab3:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab3:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab3:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
 
 -- Blox Fruits
+
 Tab4:CreateButton({ Name = "🔥 [NEW] Keyless Blox Fruits Script 🍏 Auto Farm, Auto Raid & Infinite Money! (2025)", Callback = function() SafeLoad("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html") end })
 Tab4:CreateButton({ Name = "[YETI] Blox Fruits Script MUKURO Hub No Key System, Auto Farm & Max Level Features", Callback = function() SafeLoad("https://auth.quartyz.com/scripts/Loader.lua") end })
+Tab4:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab4:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab4:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
 
 -- Arsenal
+
 Tab8:CreateButton({ Name = "⚡ Thunder Client V2", Callback = function() SafeLoad("https://raw.githubusercontent.com/andrewdarkyyofficial/thunderclient/main/main.lua") end })
 Tab8:CreateButton({ Name = "🔒 UNDETECTED PULSE HUB ARSENAL UPDATED", Callback = function() SafeLoad("https://raw.githubusercontent.com/fonctiono/expoits/refs/heads/main/IAMARSENAL.lua") end })
+Tab8:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab8:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+Tab8:CreateButton({ Name = "Coming soon", Callback = function() SafeLoad("") end })
+
 
 -- Utility: Copy Key
+
 Tab1:CreateButton({ Name = "🔑 Copy Key", Callback = function()
     pcall(function()
         if setclipboard then setclipboard("Bigkey25") elseif toclipboard then toclipboard("Bigkey25") end
